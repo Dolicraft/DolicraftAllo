@@ -1,0 +1,2 @@
+-- Copyright (C) 2026 Dolicraft <contact@dolicraft.com>
+-- License: GPL v3+

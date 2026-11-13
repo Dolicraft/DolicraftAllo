@@ -1,0 +1,280 @@
+# Copyright (C) 2026 Dolicraft <contact@dolicraft.com>
+# License: GPL v3+
+
+# Module
+Module500800Name = DolicraftAllo
+Module500800Desc = Allo integration - Cloud phone, call history, SMS and contact sync
+Module500800DescLong = Connect Dolibarr to Allo to sync contacts, view call history, send SMS and receive real-time webhooks.
+
+# Menu
+DolicraftAllo = DolicraftAllo
+JournalAppels = Call Log
+SMS = SMS
+ContactsSync = Contacts Sync
+Configuration = Configuration
+About = About
+
+# Tabs
+Calls = Call Log
+Contacts = Contacts
+
+# Actions
+SendSMS = Send SMS
+Call = Call
+SyncContacts = Sync contacts
+TestConnection = Test connection
+
+# Fields
+ApiKey = Allo API Key
+AlloNumber = Allo Number (E.164)
+WebhookSecret = Webhook secret
+SyncContactsEnabled = Enable contact sync
+SmsEnabled = Enable SMS sending
+SenderId = Sender ID (France)
+CallType = Call type
+CallResult = Result
+Duration = Duration
+FromNumber = From
+ToNumber = To
+CallDate = Call date
+Summary = Summary
+RecordingUrl = Recording
+Tag = Tag
+SmsContent = Content
+SmsStatus = Status
+PhoneNumber = Phone number
+LastSync = Last sync
+
+# Call types
+INBOUND = Inbound
+OUTBOUND = Outbound
+
+# Call results
+ANSWERED = Answered
+NOANSWER = No answer
+BUSY = Busy
+VOICEMAIL = Voicemail
+
+# SMS status
+sent = Sent
+delivered = Delivered
+failed = Failed
+pending = Pending
+
+# History
+RecentCalls = Recent calls
+RecentSMS = Recent SMS
+
+# Setup
+AlloSetup = DolicraftAllo Configuration
+AlloSetupDesc = Configure the Allo API connection and module settings.
+ConnectionOk = Connection successful
+ConnectionError = Connection error
+NoApiKey = API key not configured
+
+# About
+AboutDolicraftAllo = About DolicraftAllo
+ModuleVersion = Module version
+ModuleAuthor = Author
+ModuleLicense = License
+
+# Numbers management
+AlloNumbers = Allo Numbers
+ConfiguredNumbers = Configured numbers
+AddNumber = Add a number
+NumberAdded = Number added successfully
+NumberDeleted = Number deleted
+DefaultNumberSet = Default number set
+NoNumberConfigured = No number configured
+SelectNumber = Select a number
+AssignedUser = Assigned user
+AssignedUserHelp = Leave empty for all users
+SetAsDefault = Set as default
+LabelExample = E.g.: Main line, Support, Sales
+SenderIDHelp = Alphanumeric 3-11 characters for SMS France
+AllUsers = All users
+Or = or
+ConfirmDelete = Are you sure you want to delete?
+
+# AJAX / Validation messages
+NoAlloNumberConfigured = No Allo number configured
+RecipientRequired = Recipient number required
+MessageRequired = Message required
+MessageTooLong = Message exceeds 1000 characters
+NoSenderNumber = No Allo sender number configured
+SMSSentSuccess = SMS sent successfully
+PermissionDenied = Permission denied
+SyncComplete = Synchronization complete
+UnknownAction = Unknown action
+TypeYourMessage = Type your message
+UseTemplate = Use template
+RelanceSMS = SMS Reminder
+Send = Send
+Cancel = Cancel
+From = From
+To = To
+
+# Additional UI translations
+NoCallsRecorded = No calls recorded
+NoContactSynced = No contact synced
+SyncInProgress = Synchronization in progress...
+SendingInProgress = Sending in progress...
+CallsImported = calls imported
+Updated = updated
+SyncCalls = Sync calls
+MISSED = Missed
+ListenRecording = Listen to recording
+Statistics = Statistics
+TotalAlloContacts = Total Allo contacts
+TotalMappedToDolibarr = Total mapped (linked to Dolibarr)
+TotalDolibarrContacts = Total Dolibarr contacts
+NamePhone = Name / Phone
+ThirdParty = Dolibarr third party
+Contact = Dolibarr contact
+Never = Never
+CreatedInDolibarr = created in Dolibarr
+NewMappings = new mappings
+SendingSMSInContext = Sending SMS in context
+Configure = Configure
+
+# Inbox
+Inbox = Inbox
+Conversations = Conversations
+SelectConversation = Select a conversation
+NoMessages = No messages
+Reply = Reply
+TypeReply = Type your reply...
+NewMessages = new messages
+
+# Dashboard
+CallDashboard = Call Dashboard
+TotalCalls = Total calls
+MissedCalls = Missed calls
+AvgDuration = Average duration
+SMSSent = SMS sent
+SMSReceived = SMS received
+ResponseRate = Response rate
+ActiveContacts = Active contacts
+RecordingsAvailable = Recordings
+CallVolume = Call volume
+TopContactsByCalls = Top contacts by calls
+CallsByNumber = Calls by number
+Answered = Answered
+Missed = Missed
+Dashboard = Dashboard
+
+# Transcripts
+Transcript = Transcript
+ShowTranscript = Show transcript
+SearchTranscript = Search transcripts
+
+# Templates
+SMSTemplates = SMS Templates
+AddTemplate = Add template
+EditTemplate = Edit template
+TemplateLabel = Template name
+TemplateContent = Content
+TemplateContext = Context
+TemplateContextAll = All
+TemplateAdded = Template added
+TemplateUpdated = Template updated
+TemplateDeleted = Template deleted
+ChooseTemplate = Choose a template
+AvailableVariables = Available variables
+NoTemplates = No template configured
+
+# Documentation
+Documentation = Documentation
+TableOfContents = Table of Contents
+DocIntroduction = Introduction
+DocIntroductionText = DolicraftAllo is a Dolibarr module that integrates the Allo cloud phone platform. It enables contact synchronization, call history viewing, SMS sending and real-time webhook notifications.
+DocFeatureCallLog = Complete call history with automatic synchronization
+DocFeatureSMS = Send SMS from third-party, contact and invoice cards
+DocFeatureContacts = Bidirectional contact sync between Allo and Dolibarr
+DocFeatureWebhooks = Real-time webhook reception (calls, SMS, contacts)
+DocFeatureDashboard = Dashboard with statistics and charts
+DocPrerequisites = Prerequisites
+DocPrereqAlloPlan = An Allo Business or Pro subscription is required to access the API
+DocPrereqApiKey = An API key generated from your Allo account (Settings > API)
+DocPrereqDolibarr = Dolibarr version 16 or higher
+DocInstallation = Installation
+DocInstallStep1 = Copy the dolicraftallo folder into Dolibarr's custom/ directory
+DocInstallStep2 = Activate the module from Home > Setup > Modules
+DocInstallStep3 = Configure the API key in the module's Configuration tab
+DocConfiguration = Configuration
+DocConfigurationText = Go to the Configuration tab to set up the module.
+DocConfigApiKey = Your Allo API key, available in Settings > API of your Allo account
+DocConfigNumbers = Add your Allo numbers in the Numbers tab. You can assign a number to a specific user.
+DocConfigWebhook = The webhook URL to configure in your Allo account to receive real-time events
+DocConfigSenderId = Alphanumeric sender ID (3-11 characters) for sending SMS in France
+DocCallLog = Call Log
+DocCallLogText = The call log displays all calls synchronized from your Allo account.
+DocCallLogSync = Click "Sync calls" to fetch the latest calls from Allo
+DocCallLogFilter = Use filters to search by date, number, call type or Allo number
+DocCallLogTranscript = If available, the call transcript is accessible via the icon in the Transcript column
+DocCallLogRecording = Audio recordings are accessible via the play icon in the Summary column
+DocSMS = SMS
+DocSMSText = The module allows sending SMS directly from Dolibarr.
+DocSMSSend = Send SMS from third-party, contact and invoice cards via the "Send SMS" button
+DocSMSTemplates = Create reusable SMS templates in the SMS Templates tab with dynamic variables
+DocSMSInbox = View received SMS in the inbox (Inbox tab)
+DocSMSLog = The complete SMS history (sent and received) is available in the SMS tab
+DocContacts = Contacts
+DocContactsText = Contact synchronization links your Allo contacts to your Dolibarr contacts.
+DocContactsSync = Synchronization uses phone numbers to match between Allo and Dolibarr
+DocContactsMap = Mapped contacts are displayed with their Dolibarr correspondence (third-party and contact)
+DocContactsCreate = If no matching Dolibarr contact is found, a new contact is automatically created during synchronization
+DocWebhooks = Webhooks
+DocWebhooksText = Webhooks allow Allo to send real-time notifications to Dolibarr.
+DocWebhooksEvents = Supported events:
+DocWebhookEventCall = Call completed - automatically logged in the call log
+DocWebhookEventSMS = SMS received - logged in the inbox and SMS log
+DocWebhookEventContact = Contact updated - mapping is automatically updated
+DocDashboard = Dashboard
+DocDashboardText = The dashboard provides an overview of your phone activity.
+DocDashboardCalls = Total calls, missed calls, average duration
+DocDashboardSMS = SMS sent and received, response rate
+DocDashboardContacts = Active contacts and top contacts by call count
+DocTroubleshooting = Troubleshooting
+DocTroubleshootConnectionFail = API connection fails
+DocTroubleshootConnectionFixe = Check that your API key is correct and your Allo subscription is active. Test the connection via the button in the Configuration tab.
+DocTroubleshootNoCallsSync = No calls are synchronized
+DocTroubleshootNoCallsFix = Check that at least one Allo number is configured in the Numbers tab. Also verify that calls exist on your Allo account.
+DocTroubleshootSMSFail = SMS sending fails
+DocTroubleshootSMSFix = Check that SMS sending is enabled in the configuration. Verify the Sender ID for France. Make sure the destination number is in international format.
+DocTroubleshootWebhookFail = Webhooks are not working
+DocTroubleshootWebhookFix = Check the webhook URL in your Allo account. The URL must be publicly accessible (HTTPS recommended). Check Dolibarr logs for any errors.
+
+# Dashboard / status labels (added in 1.0.1)
+Last30Days = Last 30 days
+Last7Days = Last 7 days
+LastYear = Last year
+ThisMonth = This month
+KeyIndicators = Key indicators
+CallVolumeByDay = Call volume by day
+TopContactsByCallVolume = Top contacts by call volume
+NoDataForPeriod = No data for this period
+NoSMSYet = No SMS yet
+SelectAConversation = Select a conversation
+ApiKeyConfigured = API key configured
+AlloSetupDescConfigured = An API key is set. Click "Test connection" below to verify it actually works against the Allo API.
+
+# API key scopes and scheduled jobs (added in 1.0.3)
+ApiKeyScopesHelp = Minimum key scopes: PHONE_NUMBERS_READ, CONVERSATIONS_READ, SMS_SEND, CRM_READ. See the
+DocApiScopes = API key scopes
+DocApiScopesText = When creating the key in Allo (Settings > API), only tick the scopes of the features you use:
+DocScopeFeature = Module feature
+DocScopeTestNumbers = Connection test and number list
+DocScopeCalls = Call log synchronization
+DocScopeSMS = SMS sending
+DocScopeContacts = Contact synchronization (read only, the module does not write to Allo)
+DocApiScopesNote = Webhooks are configured in the Allo interface and need no scope. A missing scope returns HTTP 403 API_KEY_INSUFFICIENT_SCOPE with the name of the required scope.
+DocCron = Scheduled jobs
+DocCronText = Alternative to the webhook when Dolibarr cannot be reached from the internet: Dolibarr polls Allo at regular intervals. Two jobs are created when the module is enabled, disabled by default:
+DocCronCalls = every hour, imports and updates the call log of every configured number
+DocCronContacts = once a day, synchronizes Allo contacts (only if "Enable contact sync" is ticked in the setup)
+DocCronEnable = To enable them: activate the Scheduled jobs module, then Home > Admin tools > Scheduled jobs. The Dolibarr system cron (scripts/cron/cron_run_jobs.php) must be set up.
+DocTroubleshootScope = "API_KEY_INSUFFICIENT_SCOPE" error
+DocTroubleshootScopeFix = The API key lacks the scope required by the feature (see the API key scopes section). Create a new key in Allo with that scope and save it in the setup.
+AlloCallsSyncJob = Allo - Call sync
+AlloContactsSyncJob = Allo - Contact sync

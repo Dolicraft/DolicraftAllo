@@ -1,0 +1,266 @@
+# Copyright (C) 2026 Dolicraft <contact@dolicraft.com>
+# License: GPL v3+
+
+# Module
+Module500800Name = DolicraftAllo
+Module500800Desc = Allo-Integration - Cloud-Telefonie, Anrufverlauf, SMS und Kontaktsynchronisation
+Module500800DescLong = Verbinden Sie Dolibarr mit Allo, um Ihre Kontakte zu synchronisieren, den Anrufverlauf einzusehen, SMS zu senden und Webhooks in Echtzeit zu empfangen.
+
+# Menu
+DolicraftAllo = DolicraftAllo
+JournalAppels = Anrufprotokoll
+SMS = SMS
+ContactsSync = Kontakte Sync
+Configuration = Konfiguration
+About = Ueber
+
+# Tabs
+Calls = Anrufprotokoll
+Contacts = Kontakte
+
+# Actions
+SendSMS = SMS senden
+Call = Anrufen
+SyncContacts = Kontakte synchronisieren
+TestConnection = Verbindung testen
+
+# Fields
+ApiKey = Allo API-Schluessel
+AlloNumber = Allo-Nummer (E.164)
+WebhookSecret = Webhook-Geheimnis
+SyncContactsEnabled = Kontaktsynchronisation aktivieren
+SmsEnabled = SMS-Versand aktivieren
+SenderId = Sender-ID (Frankreich)
+CallType = Anruftyp
+CallResult = Ergebnis
+Duration = Dauer
+FromNumber = Von
+ToNumber = Nach
+CallDate = Anrufdatum
+Summary = Zusammenfassung
+RecordingUrl = Aufnahme
+Tag = Tag
+SmsContent = Inhalt
+SmsStatus = Status
+PhoneNumber = Telefonnummer
+LastSync = Letzte Synchronisation
+
+# Call types
+INBOUND = Eingehend
+OUTBOUND = Ausgehend
+
+# Call results
+ANSWERED = Angenommen
+NOANSWER = Keine Antwort
+BUSY = Besetzt
+VOICEMAIL = Mailbox
+
+# SMS status
+sent = Gesendet
+delivered = Zugestellt
+failed = Fehlgeschlagen
+pending = Ausstehend
+
+# History
+RecentCalls = Letzte Anrufe
+RecentSMS = Letzte SMS
+
+# Setup
+AlloSetup = DolicraftAllo Konfiguration
+AlloSetupDesc = Konfigurieren Sie die Verbindung zur Allo-API und die Moduleinstellungen.
+ConnectionOk = Verbindung erfolgreich
+ConnectionError = Verbindungsfehler
+NoApiKey = API-Schluessel nicht konfiguriert
+
+# About
+AboutDolicraftAllo = Ueber DolicraftAllo
+ModuleVersion = Modulversion
+ModuleAuthor = Autor
+ModuleLicense = Lizenz
+
+# Numbers management
+AlloNumbers = Allo-Nummern
+ConfiguredNumbers = Konfigurierte Nummern
+AddNumber = Nummer hinzufuegen
+NumberAdded = Nummer erfolgreich hinzugefuegt
+NumberDeleted = Nummer geloescht
+DefaultNumberSet = Standardnummer festgelegt
+NoNumberConfigured = Keine Nummer konfiguriert
+SelectNumber = Nummer auswaehlen
+AssignedUser = Zugewiesener Benutzer
+AssignedUserHelp = Leer lassen fuer alle Benutzer
+SetAsDefault = Als Standard festlegen
+LabelExample = Z.B.: Hauptleitung, Support, Vertrieb
+SenderIDHelp = Alphanumerisch 3-11 Zeichen fuer SMS Frankreich
+AllUsers = Alle Benutzer
+Or = oder
+ConfirmDelete = Sind Sie sicher, dass Sie loeschen moechten?
+
+# AJAX / Validation messages
+NoAlloNumberConfigured = Keine Allo-Nummer konfiguriert
+RecipientRequired = Empfaengernummer erforderlich
+MessageRequired = Nachricht erforderlich
+MessageTooLong = Nachricht ueberschreitet 1000 Zeichen
+NoSenderNumber = Keine Allo-Absendernummer konfiguriert
+SMSSentSuccess = SMS erfolgreich gesendet
+PermissionDenied = Zugriff verweigert
+SyncComplete = Synchronisierung abgeschlossen
+UnknownAction = Unbekannte Aktion
+TypeYourMessage = Nachricht eingeben
+UseTemplate = Vorlage verwenden
+RelanceSMS = SMS-Erinnerung
+Send = Senden
+Cancel = Abbrechen
+From = Von
+To = An
+
+# Additional UI translations
+NoCallsRecorded = Keine Anrufe aufgezeichnet
+NoContactSynced = Kein Kontakt synchronisiert
+SyncInProgress = Synchronisierung laeuft...
+SendingInProgress = Versand laeuft...
+CallsImported = Anrufe importiert
+Updated = aktualisiert
+SyncCalls = Anrufe synchronisieren
+MISSED = Verpasst
+ListenRecording = Aufnahme anhoeren
+Statistics = Statistiken
+TotalAlloContacts = Allo-Kontakte gesamt
+TotalMappedToDolibarr = Gesamt zugeordnet (mit Dolibarr verknuepft)
+TotalDolibarrContacts = Dolibarr-Kontakte gesamt
+NamePhone = Name / Telefon
+ThirdParty = Dolibarr-Geschaeftspartner
+Contact = Dolibarr-Kontakt
+Never = Nie
+CreatedInDolibarr = in Dolibarr erstellt
+NewMappings = neue Zuordnungen
+SendingSMSInContext = SMS im Kontext senden
+Configure = Konfigurieren
+
+# Inbox
+Inbox = Posteingang
+Conversations = Konversationen
+SelectConversation = Konversation auswaehlen
+NoMessages = Keine Nachrichten
+Reply = Antworten
+TypeReply = Antwort eingeben...
+NewMessages = neue Nachrichten
+
+# Dashboard
+CallDashboard = Anruf-Dashboard
+TotalCalls = Anrufe gesamt
+MissedCalls = Verpasste Anrufe
+AvgDuration = Durchschnittliche Dauer
+SMSSent = SMS gesendet
+SMSReceived = SMS empfangen
+ResponseRate = Antwortrate
+ActiveContacts = Aktive Kontakte
+RecordingsAvailable = Aufnahmen
+CallVolume = Anrufvolumen
+TopContactsByCalls = Top-Kontakte nach Anrufen
+CallsByNumber = Anrufe nach Nummer
+Answered = Angenommen
+Missed = Verpasst
+Dashboard = Dashboard
+
+# Transcripts
+Transcript = Transkription
+ShowTranscript = Transkription anzeigen
+SearchTranscript = In Transkriptionen suchen
+
+# Templates
+SMSTemplates = SMS-Vorlagen
+AddTemplate = Vorlage hinzufuegen
+EditTemplate = Vorlage bearbeiten
+TemplateLabel = Vorlagenname
+TemplateContent = Inhalt
+TemplateContext = Kontext
+TemplateContextAll = Alle
+TemplateAdded = Vorlage hinzugefuegt
+TemplateUpdated = Vorlage aktualisiert
+TemplateDeleted = Vorlage geloescht
+ChooseTemplate = Vorlage auswaehlen
+AvailableVariables = Verfuegbare Variablen
+NoTemplates = Keine Vorlage konfiguriert
+
+# Documentation
+Documentation = Dokumentation
+TableOfContents = Inhaltsverzeichnis
+DocIntroduction = Einfuehrung
+DocIntroductionText = DolicraftAllo ist ein Dolibarr-Modul, das die Cloud-Telefonie-Plattform Allo integriert. Es ermoeglicht Kontaktsynchronisierung, Anrufverlauf, SMS-Versand und Echtzeit-Webhooks.
+DocFeatureCallLog = Vollstaendiger Anrufverlauf mit automatischer Synchronisierung
+DocFeatureSMS = SMS-Versand von Geschaeftspartner-, Kontakt- und Rechnungskarten
+DocFeatureContacts = Bidirektionale Kontaktsynchronisierung zwischen Allo und Dolibarr
+DocFeatureWebhooks = Echtzeit-Webhook-Empfang (Anrufe, SMS, Kontakte)
+DocFeatureDashboard = Dashboard mit Statistiken und Diagrammen
+DocPrerequisites = Voraussetzungen
+DocPrereqAlloPlan = Ein Allo Business- oder Pro-Abonnement ist fuer den API-Zugriff erforderlich
+DocPrereqApiKey = Ein API-Schluessel, generiert in Ihrem Allo-Konto (Einstellungen > API)
+DocPrereqDolibarr = Dolibarr Version 16 oder hoeher
+DocInstallation = Installation
+DocInstallStep1 = Kopieren Sie den Ordner dolicraftallo in das custom/-Verzeichnis von Dolibarr
+DocInstallStep2 = Aktivieren Sie das Modul unter Start > Einrichtung > Module
+DocInstallStep3 = Konfigurieren Sie den API-Schluessel im Reiter Konfiguration des Moduls
+DocConfiguration = Konfiguration
+DocConfigurationText = Gehen Sie zum Reiter Konfiguration, um das Modul einzurichten.
+DocConfigApiKey = Ihr Allo API-Schluessel, verfuegbar unter Einstellungen > API Ihres Allo-Kontos
+DocConfigNumbers = Fuegen Sie Ihre Allo-Nummern im Reiter Nummern hinzu. Sie koennen eine Nummer einem bestimmten Benutzer zuweisen.
+DocConfigWebhook = Die Webhook-URL, die in Ihrem Allo-Konto konfiguriert werden muss, um Echtzeit-Ereignisse zu empfangen
+DocConfigSenderId = Alphanumerische Absender-ID (3-11 Zeichen) fuer SMS-Versand in Frankreich
+DocCallLog = Anrufprotokoll
+DocCallLogText = Das Anrufprotokoll zeigt alle synchronisierten Anrufe aus Ihrem Allo-Konto an.
+DocCallLogSync = Klicken Sie auf "Anrufe synchronisieren", um die neuesten Anrufe von Allo abzurufen
+DocCallLogFilter = Verwenden Sie Filter, um nach Datum, Nummer, Anruftyp oder Allo-Nummer zu suchen
+DocCallLogTranscript = Falls verfuegbar, ist die Anruftranskription ueber das Symbol in der Spalte Transkription zugaenglich
+DocCallLogRecording = Audioaufnahmen sind ueber das Wiedergabesymbol in der Spalte Zusammenfassung zugaenglich
+DocSMS = SMS
+DocSMSText = Das Modul ermoeglicht den SMS-Versand direkt aus Dolibarr.
+DocSMSSend = Senden Sie SMS von Geschaeftspartner-, Kontakt- und Rechnungskarten ueber den Button "SMS senden"
+DocSMSTemplates = Erstellen Sie wiederverwendbare SMS-Vorlagen im Reiter SMS-Vorlagen mit dynamischen Variablen
+DocSMSInbox = Sehen Sie empfangene SMS im Posteingang (Reiter Posteingang)
+DocSMSLog = Der vollstaendige SMS-Verlauf (gesendet und empfangen) ist im Reiter SMS verfuegbar
+DocContacts = Kontakte
+DocContactsText = Die Kontaktsynchronisierung verknuepft Ihre Allo-Kontakte mit Ihren Dolibarr-Kontakten.
+DocContactsSync = Die Synchronisierung basiert auf Telefonnummern, um Allo und Dolibarr zu verknuepfen
+DocContactsMap = Zugeordnete Kontakte werden mit ihrer Dolibarr-Entsprechung angezeigt (Geschaeftspartner und Kontakt)
+DocContactsCreate = Wenn kein passender Dolibarr-Kontakt gefunden wird, wird bei der Synchronisierung automatisch ein neuer erstellt
+DocWebhooks = Webhooks
+DocWebhooksText = Webhooks ermoeglichen es Allo, Echtzeit-Benachrichtigungen an Dolibarr zu senden.
+DocWebhooksEvents = Unterstuetzte Ereignisse:
+DocWebhookEventCall = Anruf abgeschlossen - automatisch im Anrufprotokoll erfasst
+DocWebhookEventSMS = SMS empfangen - im Posteingang und SMS-Verlauf erfasst
+DocWebhookEventContact = Kontakt aktualisiert - Zuordnung wird automatisch aktualisiert
+DocDashboard = Dashboard
+DocDashboardText = Das Dashboard bietet einen Ueberblick ueber Ihre Telefonaktivitaet.
+DocDashboardCalls = Gesamtanrufe, verpasste Anrufe, durchschnittliche Dauer
+DocDashboardSMS = Gesendete und empfangene SMS, Antwortrate
+DocDashboardContacts = Aktive Kontakte und Top-Kontakte nach Anrufanzahl
+DocTroubleshooting = Fehlerbehebung
+DocTroubleshootConnectionFail = Die API-Verbindung schlaegt fehl
+DocTroubleshootConnectionFixe = Ueberpruefen Sie, ob Ihr API-Schluessel korrekt ist und Ihr Allo-Abonnement aktiv ist. Testen Sie die Verbindung ueber den Button im Reiter Konfiguration.
+DocTroubleshootNoCallsSync = Keine Anrufe werden synchronisiert
+DocTroubleshootNoCallsFix = Ueberpruefen Sie, ob mindestens eine Allo-Nummer im Reiter Nummern konfiguriert ist. Pruefen Sie auch, ob Anrufe in Ihrem Allo-Konto vorhanden sind.
+DocTroubleshootSMSFail = Der SMS-Versand schlaegt fehl
+DocTroubleshootSMSFix = Ueberpruefen Sie, ob der SMS-Versand in der Konfiguration aktiviert ist. Pruefen Sie die Sender-ID fuer Frankreich. Stellen Sie sicher, dass die Zielnummer im internationalen Format vorliegt.
+DocTroubleshootWebhookFail = Webhooks funktionieren nicht
+DocTroubleshootWebhookFix = Ueberpruefen Sie die Webhook-URL in Ihrem Allo-Konto. Die URL muss oeffentlich zugaenglich sein (HTTPS empfohlen). Pruefen Sie die Dolibarr-Logs auf Fehler.
+
+# API-Schlüssel-Scopes und geplante Jobs (hinzugefügt in 1.0.3)
+ApiKeyScopesHelp = Mindest-Scopes des Schlüssels: PHONE_NUMBERS_READ, CONVERSATIONS_READ, SMS_SEND, CRM_READ. Siehe
+DocApiScopes = Scopes des API-Schlüssels
+DocApiScopesText = Beim Erstellen des Schlüssels in Allo (Einstellungen > API) nur die Scopes der genutzten Funktionen auswählen:
+DocScopeFeature = Modulfunktion
+DocScopeTestNumbers = Verbindungstest und Nummernliste
+DocScopeCalls = Synchronisierung des Anrufprotokolls
+DocScopeSMS = SMS-Versand
+DocScopeContacts = Kontaktsynchronisierung (nur Lesen, das Modul schreibt nicht in Allo)
+DocApiScopesNote = Webhooks werden in der Allo-Oberfläche eingerichtet und benötigen keinen Scope. Ein fehlender Scope liefert HTTP 403 API_KEY_INSUFFICIENT_SCOPE mit dem Namen des benötigten Scopes.
+DocCron = Geplante Jobs
+DocCronText = Alternative zum Webhook, wenn Dolibarr nicht aus dem Internet erreichbar ist: Dolibarr fragt Allo regelmäßig ab. Bei der Aktivierung des Moduls werden zwei standardmäßig deaktivierte Jobs angelegt:
+DocCronCalls = stündlich, importiert und aktualisiert das Anrufprotokoll aller konfigurierten Nummern
+DocCronContacts = einmal täglich, synchronisiert die Allo-Kontakte (nur wenn "Kontaktsynchronisierung aktivieren" in der Konfiguration gesetzt ist)
+DocCronEnable = Zum Aktivieren: Modul Geplante Jobs aktivieren, dann Start > Admin-Tools > Geplante Jobs. Der System-Cron von Dolibarr (scripts/cron/cron_run_jobs.php) muss eingerichtet sein.
+DocTroubleshootScope = Fehler "API_KEY_INSUFFICIENT_SCOPE"
+DocTroubleshootScopeFix = Dem API-Schlüssel fehlt der von der Funktion benötigte Scope (siehe Abschnitt Scopes des API-Schlüssels). Erstellen Sie in Allo einen neuen Schlüssel mit diesem Scope und speichern Sie ihn in der Konfiguration.
+AlloCallsSyncJob = Allo - Anrufsynchronisierung
+AlloContactsSyncJob = Allo - Kontaktsynchronisierung

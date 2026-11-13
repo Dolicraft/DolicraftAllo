@@ -1,0 +1,161 @@
+/* Copyright (C) 2026 Dolicraft <contact@dolicraft.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ */
+
+/* Menu icon */
+.fa-dolicraftallo::before {
+	content: "\f095";
+}
+
+/* Call type badges */
+.dolicraftallo-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 0.85em;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.dolicraftallo-badge-inbound {
+	background-color: #e8f5e9;
+	color: #2e7d32;
+}
+
+.dolicraftallo-badge-outbound {
+	background-color: #e3f2fd;
+	color: #1565c0;
+}
+
+.dolicraftallo-badge-missed {
+	background-color: #fce4ec;
+	color: #c62828;
+}
+
+/* Call result badges */
+.dolicraftallo-result-answered {
+	background-color: #e8f5e9;
+	color: #2e7d32;
+}
+
+.dolicraftallo-result-noanswer {
+	background-color: #fff3e0;
+	color: #e65100;
+}
+
+.dolicraftallo-result-busy {
+	background-color: #fce4ec;
+	color: #c62828;
+}
+
+.dolicraftallo-result-voicemail {
+	background-color: #f3e5f5;
+	color: #6a1b9a;
+}
+
+/* SMS status badges */
+.dolicraftallo-sms-sent {
+	background-color: #e8f5e9;
+	color: #2e7d32;
+}
+
+.dolicraftallo-sms-delivered {
+	background-color: #e3f2fd;
+	color: #1565c0;
+}
+
+.dolicraftallo-sms-failed {
+	background-color: #fce4ec;
+	color: #c62828;
+}
+
+.dolicraftallo-sms-pending {
+	background-color: #fff3e0;
+	color: #e65100;
+}
+
+/* Call/SMS history panel on cards */
+.dolicraftallo-panel {
+	margin-top: 10px;
+	padding: 10px;
+	background: #fafafa;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+}
+
+.dolicraftallo-panel h3 {
+	margin: 0 0 8px 0;
+	font-size: 1em;
+	color: #333;
+}
+
+.dolicraftallo-panel table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.dolicraftallo-panel table td {
+	padding: 4px 6px;
+	border-bottom: 1px solid #eee;
+	font-size: 0.9em;
+}
+
+.dolicraftallo-panel table tr:last-child td {
+	border-bottom: none;
+}
+
+/* Action buttons */
+.dolicraftallo-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px 10px;
+	border-radius: 3px;
+	font-size: 0.85em;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.dolicraftallo-btn-sms {
+	background-color: #e3f2fd;
+	color: #1565c0;
+	border-color: #90caf9;
+}
+
+.dolicraftallo-btn-sms:hover {
+	background-color: #bbdefb;
+}
+
+.dolicraftallo-btn-call {
+	background-color: #e8f5e9;
+	color: #2e7d32;
+	border-color: #a5d6a7;
+}
+
+.dolicraftallo-btn-call:hover {
+	background-color: #c8e6c9;
+}
+
+/* Duration formatting */
+.dolicraftallo-duration {
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+/* Sync status indicators */
+.dolicraftallo-sync-ok {
+	color: #2e7d32;
+}
+
+.dolicraftallo-sync-error {
+	color: #c62828;
+}
+
+.dolicraftallo-sync-pending {
+	color: #e65100;
+}
