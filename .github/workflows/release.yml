@@ -1,0 +1,43 @@
+name: Package & Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  package-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check pre-release
+        id: prerelease
+        run: |
+          if [[ "${{ github.ref_name }}" == *-* ]]; then
+            echo "value=true" >> $GITHUB_OUTPUT
+          else
+            echo "value=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Package module
+        run: |
+          echo "Packaging dolicraftallo module ..."
+          mkdir -p build/dolicraftallo artifacts
+          git archive HEAD | tar -x -C build/dolicraftallo
+          rm -rf build/dolicraftallo/.gitignore build/dolicraftallo/.github
+          mv build/dolicraftallo/CHANGELOG.md build/dolicraftallo/ChangeLog.md
+          (cd build && zip -r "../artifacts/module_dolicraftallo-${{ github.ref_name }}.zip" dolicraftallo/)
+          echo "dolicraftallo module packaged."
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: v${{ github.ref_name }}
+          body: Release created from CI/CD
+          prerelease: ${{ steps.prerelease.outputs.value }}
+          files: artifacts/module_dolicraftallo-${{ github.ref_name }}.zip
