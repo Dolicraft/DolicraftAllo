@@ -48,6 +48,10 @@ Two jobs are created when the module is enabled, disabled by default (*Home > Ad
 
 The synchronization logic lives in `class/allo_sync.class.php` and is shared by the manual sync buttons and the scheduled jobs.
 
+## Releases
+
+Pushing a tag (e.g. `1.0.4`) runs the *Package & Release* GitHub workflow (`.github/workflows/release.yml`): it builds `module_dolicraftallo-<tag>.zip`, ready to deploy from *Home > Setup > Modules/Applications > Deploy/install external module*, and attaches it to a new GitHub release. A tag containing `-` (e.g. `1.0.4-rc1`) creates a pre-release.
+
 ## Contributing
 
 Issues and pull requests are welcome. Please describe the Dolibarr and module versions you tested with, and keep the existing coding style (Dolibarr conventions, tabs, `dol_syslog()` for logging).
